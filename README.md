@@ -1,9 +1,12 @@
 # Dependency-Injection-Example
 An example of multiple dependency injection designs. Done in C#.
 
-This is a simple program that has working examples of three different dependency injection methodds; constructor injection, method injection, and property injection.
+This is a simple program that has working examples of three different dependency injection methods:
+* constructor injection
+* method injection
+* property injection.
 
-Main will ask the user for an input and send that input into a class called MessageCenter. MessageCenter has a method that will call a method into one of the color writers (RedWriter, BlueWriter, or GreenWriter).
+Main will ask the user for an input and send that input into a class called MessageCenter. MessageCenter has a method, Post() that will call the write() method from one of the color writers (RedWriter, BlueWriter, or GreenWriter).
 
 MessageCenter has a 'pen' attribute which is an abstraction of the Writer interface that the color writers implement.
 
